@@ -170,7 +170,7 @@ nav.solid {
 
 .project-card {
   position: relative;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3/2;
   overflow: hidden;
   cursor: pointer;
   display: block;
