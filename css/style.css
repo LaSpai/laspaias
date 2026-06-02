@@ -384,6 +384,20 @@ nav.solid {
 }
 
 /* ==================
+   FOOTER
+================== */
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-top: 1px solid #1a1a1a;
+  margin-top: 60px;
+}
+
+/* ==================
    RESPONSIVE
 ================== */
 @media (max-width: 900px) {
