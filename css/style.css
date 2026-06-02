@@ -168,8 +168,8 @@ nav.solid {
 ================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 .project-card {
@@ -394,7 +394,6 @@ nav.solid {
    RESPONSIVE
 ================== */
 @media (max-width: 900px) {
-  .projects-grid,
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -418,6 +417,7 @@ nav.solid {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
+
 
   .nav-links {
     gap: 20px;
