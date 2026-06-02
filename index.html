@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazaros Spaias — Photography</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="transparent">
+    <a href="index.html" class="nav-logo">Lazaros Spaias</a>
+    <ul class="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="cover">
+    <!-- Replace cover/cover.jpg with your image -->
+    <img src="images/cover/cover.jpg" alt="Lazaros Spaias Photography">
+    <div class="cover-overlay"></div>
+    <div class="cover-title">
+      <h1>Lazaros Spaias</h1>
+      <p>Documentary &amp; Street Photography</p>
+    </div>
+  </div>
+
+  <script>
+    // Switch nav to solid after scrolling past cover
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight * 0.8) {
+        nav.classList.replace('transparent', 'solid');
+      } else {
+        nav.classList.replace('solid', 'transparent');
+      }
+    });
+  </script>
+
+</body>
+</html>
