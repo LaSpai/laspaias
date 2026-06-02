@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <nav class="solid">
+  <nav class="transparent">
     <a href="index.html" class="nav-logo">Lazaros Spaias</a>
     <ul class="nav-links">
       <li><a href="projects.html">Projects</a></li>
@@ -18,15 +18,24 @@
   </nav>
 
   <div class="cover">
-    <div class="cover-image-wrap">
-      <img src="images/cover/cover.jpg" alt="Lazaros Spaias Photography">
-    </div>
+    <img src="images/cover/cover.jpg" alt="Lazaros Spaias Photography">
+    <div class="cover-overlay"></div>
     <div class="cover-title">
       <p>Documentary &amp; Street Photography</p>
     </div>
   </div>
 
   <script src="js/protect.js"></script>
+  <script>
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > window.innerHeight * 0.8) {
+        nav.classList.replace('transparent', 'solid');
+      } else {
+        nav.classList.replace('solid', 'transparent');
+      }
+    });
+  </script>
 
 </body>
 </html>

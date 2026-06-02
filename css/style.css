@@ -1,6 +1,8 @@
 /* ==================
    BASE
 ================== */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +25,7 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.02em;
   min-height: 100vh;
@@ -99,39 +101,36 @@ nav.solid {
    COVER (homepage)
 ================== */
 .cover {
-  padding-top: var(--nav-height);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 60px;
-}
-
-.cover-image-wrap {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  aspect-ratio: 3/2;
+  height: 100vh;
   overflow: hidden;
-  margin: 40px auto 0;
 }
 
-.cover-image-wrap img {
+.cover img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
+.cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
 .cover-title {
-  margin-top: 20px;
-  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
 }
 
 .cover-title p {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.5);
 }
 
 /* ==================
