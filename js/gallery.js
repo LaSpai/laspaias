@@ -3,6 +3,9 @@ const lightbox = document.querySelector('.lightbox');
 if (lightbox) {
   const lightboxImg = lightbox.querySelector('.lightbox-img');
   const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+  const lightboxTitle = lightbox.querySelector('.lightbox-title');
+  const pageTitle = document.querySelector('.page-title');
+  if (lightboxTitle && pageTitle) lightboxTitle.textContent = pageTitle.textContent;
   const items = Array.from(document.querySelectorAll('.gallery-item img'));
   let current = 0;
 

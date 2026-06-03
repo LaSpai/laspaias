@@ -259,6 +259,16 @@ nav.solid {
   object-fit: contain;
 }
 
+.lightbox-title {
+  position: fixed;
+  top: 24px;
+  left: 40px;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
 .lightbox-close {
   position: fixed;
   top: 24px;
