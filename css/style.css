@@ -269,6 +269,7 @@ nav.solid {
   text-transform: uppercase;
   color: var(--text);
   white-space: nowrap;
+  z-index: 1002;
 }
 
 .lightbox-close {
@@ -281,6 +282,7 @@ nav.solid {
   color: var(--text-muted);
   cursor: pointer;
   transition: color 0.2s;
+  z-index: 1002;
 }
 
 .lightbox-close:hover {
@@ -298,6 +300,7 @@ nav.solid {
   cursor: pointer;
   transition: color 0.2s;
   user-select: none;
+  z-index: 1002;
 }
 
 .lightbox-nav:hover {
@@ -315,6 +318,7 @@ nav.solid {
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   color: var(--text-muted);
+  z-index: 1002;
 }
 
 /* ==================
