@@ -254,19 +254,21 @@ nav.solid {
 }
 
 .lightbox-img {
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 75vw;
+  max-height: 75vh;
   object-fit: contain;
 }
 
 .lightbox-title {
   position: fixed;
   top: 24px;
-  left: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--text);
+  white-space: nowrap;
 }
 
 .lightbox-close {

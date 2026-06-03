@@ -5,7 +5,6 @@ if (lightbox) {
   const lightboxCounter = lightbox.querySelector('.lightbox-counter');
   const lightboxTitle = lightbox.querySelector('.lightbox-title');
   const pageTitle = document.querySelector('.page-title');
-  if (lightboxTitle && pageTitle) lightboxTitle.textContent = pageTitle.textContent;
   const items = Array.from(document.querySelectorAll('.gallery-item img'));
   let current = 0;
 
@@ -13,6 +12,7 @@ if (lightbox) {
     current = index;
     lightboxImg.src = items[current].src;
     lightboxCounter.textContent = `${current + 1} / ${items.length}`;
+    if (lightboxTitle && pageTitle) lightboxTitle.textContent = pageTitle.textContent.trim();
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
