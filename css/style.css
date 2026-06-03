@@ -246,6 +246,7 @@ nav.solid {
   aspect-ratio: 3/2;
   overflow: hidden;
   cursor: pointer;
+  border: 3px solid #fff;
 }
 
 .gallery-item img {
