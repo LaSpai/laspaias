@@ -12,7 +12,7 @@ if (lightbox) {
     current = index;
     lightboxImg.src = items[current].src;
     lightboxCounter.textContent = `${current + 1} / ${items.length}`;
-    if (lightboxTitle && pageTitle) lightboxTitle.textContent = pageTitle.textContent.trim();
+    if (lightboxTitle && pageTitle) lightboxTitle.textContent = pageTitle.textContent.trim().split('—')[0].trim();
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
