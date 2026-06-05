@@ -160,19 +160,11 @@ nav.solid {
    PROJECT CARDS
 ================== */
 .projects-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   padding-top: var(--nav-height);
-  box-sizing: border-box;
 }
 
 .projects-page .page-inner {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   padding: 30px 40px;
-  overflow: hidden;
 }
 
 .projects-page .page-title {
@@ -182,10 +174,7 @@ nav.solid {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 8px;
-  flex: 1;
-  min-height: 0;
 }
 
 .project-card {
@@ -193,9 +182,7 @@ nav.solid {
   overflow: hidden;
   cursor: pointer;
   display: block;
-  min-height: 0;
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 3/2;
 }
 
 .project-card img {
@@ -485,22 +472,8 @@ footer {
     padding: 40px 20px;
   }
 
-  .projects-page {
-    height: auto;
-    min-height: 100svh;
-  }
-
-  .projects-page .page-inner {
-    overflow: visible;
-  }
-
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .project-card {
-    aspect-ratio: 3/2;
   }
 
   footer {
@@ -514,10 +487,6 @@ footer {
 
 @media (max-width: 600px) {
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
