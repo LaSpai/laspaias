@@ -26,8 +26,7 @@
 
           <div class="contact-link">
             <span>Email</span>
-            <!-- Replace with your email -->
-            <a href="mailto:spaiklazaros@gmail.com">spaiklazaros@gmail.com</a>
+            <a href="mailto:spaiklazaros@gmail.com" id="email-link">spaiklazaros@gmail.com</a>
           </div>
 
           <div class="contact-link">
@@ -42,5 +41,17 @@
   </div>
 
   <footer>© 2026 Lazaros Spaias. All rights reserved.</footer>
+  <script>
+    const emailLink = document.getElementById('email-link');
+    if (emailLink) {
+      emailLink.addEventListener('click', (e) => {
+        navigator.clipboard.writeText('spaiklazaros@gmail.com').then(() => {
+          const orig = emailLink.textContent;
+          emailLink.textContent = 'Copied';
+          setTimeout(() => { emailLink.textContent = orig; }, 1500);
+        }).catch(() => {});
+      });
+    }
+  </script>
 </body>
 </html>
