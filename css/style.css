@@ -181,9 +181,8 @@ nav.solid {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  display: block;
-  height: 0;
-  padding-bottom: 66.67%;
+  aspect-ratio: 3/2;
+  min-width: 0;
 }
 
 .project-card img {
