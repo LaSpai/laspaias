@@ -183,6 +183,8 @@ nav.solid {
   cursor: pointer;
   aspect-ratio: 3/2;
   min-width: 0;
+  display: flex;
+  align-items: flex-end;
 }
 
 .project-card img {
@@ -205,10 +207,9 @@ nav.solid {
 }
 
 .project-card-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
   padding: 30px 24px;
   background: linear-gradient(transparent, rgba(0,0,0,0.8));
 }
