@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Lazaros Spaias</title>
+  <title>Photos — Lazaros Spaias</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="solid">
+  <nav class="transparent" style="position:fixed;z-index:200;">
     <a href="index.html" class="nav-logo">Lazaros Spaias</a>
     <ul class="nav-links">
       <li><a href="projects.html" class="active">Photos</a></li>
@@ -17,73 +17,19 @@
     </ul>
   </nav>
 
-  <div class="projects-page">
-    <div class="page-inner">
-      <p class="page-title">Series</p>
+  <div class="spray"></div>
 
-      <div class="projects-grid">
-
-        <a href="hc-punk-diy.html" class="project-card">
-          <img src="images/hc-punk-diy/cover.jpg" class="active" alt="">
-          <img src="images/hc-punk-diy/001.jpg" alt="">
-          <img src="images/hc-punk-diy/002.jpg" alt="">
-          <img src="images/hc-punk-diy/003.jpg" alt="">
-          <div class="project-card-info">
-            <div class="project-card-title">Show Up</div>
-            <div class="project-card-count">Hardcore Punk</div>
-          </div>
-        </a>
-
-        <a href="colour.html" class="project-card">
-          <img src="images/colour/cover.jpg" class="active" alt="">
-          <img src="images/colour/001.jpg" alt="">
-          <img src="images/colour/002.jpg" alt="">
-          <img src="images/colour/003.jpg" alt="">
-          <div class="project-card-info">
-            <div class="project-card-title">Out and About</div>
-            <div class="project-card-count">Street &amp; Travel</div>
-          </div>
-        </a>
-
-        <a href="film.html" class="project-card">
-          <img src="images/film/cover.jpg" class="active" alt="">
-          <img src="images/film/001.jpg" alt="">
-          <img src="images/film/002.jpg" alt="">
-          <img src="images/film/003.jpg" alt="">
-          <div class="project-card-info">
-            <div class="project-card-title">I don't work here</div>
-            <div class="project-card-count">35mm Film</div>
-          </div>
-        </a>
-
-        <a href="street-portrait.html" class="project-card">
-          <img src="images/street-portrait/cover.jpg" class="active" alt="">
-          <img src="images/street-portrait/001.jpg" alt="">
-          <img src="images/street-portrait/002.jpg" alt="">
-          <img src="images/street-portrait/003.jpg" alt="">
-          <div class="project-card-info">
-            <div class="project-card-title">Faces</div>
-            <div class="project-card-count">Street Portrait</div>
-          </div>
-        </a>
-
-        <a href="we-live-here.html" class="project-card">
-          <img src="images/we-live-here/cover.jpg" class="active" alt="">
-          <img src="images/we-live-here/001.jpg" alt="">
-          <img src="images/we-live-here/002.jpg" alt="">
-          <img src="images/we-live-here/003.jpg" alt="">
-          <div class="project-card-info">
-            <div class="project-card-title">Common Ground</div>
-            <div class="project-card-count">Urban Wildlife</div>
-          </div>
-        </a>
-
-      </div>
-    </div>
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="lightbox-title">Photos</span>
+    <span class="lightbox-close">Close</span>
+    <span class="lightbox-nav lightbox-prev">&#8592;</span>
+    <img class="lightbox-img" src="" alt="">
+    <span class="lightbox-nav lightbox-next">&#8594;</span>
+    <span class="lightbox-counter"></span>
   </div>
 
-  <footer>© 2026 Lazaros Spaias. All rights reserved.</footer>
-  <script src="js/carousel.js"></script>
+  <script src="js/spray.js"></script>
   <script src="js/protect.js"></script>
 </body>
 </html>
