@@ -370,6 +370,22 @@ nav.solid {
   margin-bottom: 16px;
 }
 
+.about-text ul {
+  list-style: none;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-text ul li {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  padding-left: 16px;
+  border-left: 1px solid #333;
+}
+
 .about-image img {
   width: 100%;
   aspect-ratio: 3/4;
