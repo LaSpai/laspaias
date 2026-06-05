@@ -181,10 +181,14 @@ nav.solid {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  aspect-ratio: 3/2;
   min-width: 0;
-  display: flex;
-  align-items: flex-end;
+  display: block;
+}
+
+.project-card::before {
+  content: '';
+  display: block;
+  padding-top: 66.67%;
 }
 
 .project-card img {
@@ -207,9 +211,11 @@ nav.solid {
 }
 
 .project-card-info {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
-  width: 100%;
   padding: 30px 24px;
   background: linear-gradient(transparent, rgba(0,0,0,0.8));
 }
