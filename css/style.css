@@ -533,4 +533,25 @@ footer {
     text-align: center;
     padding: 30px 20px;
   }
+
+  .project-card-info {
+    padding: 16px 12px;
+  }
+
+  .project-card-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+  }
+
+  .project-card-count {
+    font-size: 0.55rem;
+  }
+
+  .project-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .projects-page .page-inner {
+    padding: 20px 16px;
+  }
 }
