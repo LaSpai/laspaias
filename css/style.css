@@ -398,6 +398,14 @@ nav.solid {
   object-fit: cover;
 }
 
+.photo-credit {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
 /* ==================
    CONTACT
 ================== */
