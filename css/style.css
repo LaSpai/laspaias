@@ -244,6 +244,10 @@ nav.solid {
   gap: 3px;
 }
 
+.gallery-grid--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .gallery-item {
   aspect-ratio: 3/2;
   overflow: hidden;
@@ -472,6 +476,10 @@ footer {
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid--5 {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .about-grid {
