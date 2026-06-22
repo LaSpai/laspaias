@@ -563,10 +563,6 @@ footer {
     font-size: 0.55rem;
   }
 
-  .project-card:last-child {
-    grid-column: 1 / -1;
-  }
-
   .projects-page .page-inner {
     padding: 20px 16px;
   }
