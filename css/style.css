@@ -387,7 +387,7 @@ nav.solid {
 .about-text ul li {
   font-size: 0.8rem;
   line-height: 1.6;
-  color: var(--text-muted);
+  color: var(--text);
   padding-left: 16px;
   border-left: 1px solid #333;
 }
