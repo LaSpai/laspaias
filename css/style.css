@@ -397,9 +397,9 @@ nav.solid {
 }
 
 .lightbox-img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
 }
 
 .lightbox-title {
