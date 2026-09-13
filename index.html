@@ -16,7 +16,7 @@
     <div class="hero-icons">
       <a href="youarenotalone.html" aria-label="You Are Not Alone"><img src="images/cover/jump_stencil.png" alt="You Are Not Alone"></a>
       <a href="showup.html" aria-label="Show Up"><img src="images/cover/mohawk_stencil.png" alt="Show Up"></a>
-      <a id="email-icon-hero" href="mailto:spaiklazaros@gmail.com" aria-label="Email"><img src="images/cover/seagull_stencil.png" alt="Email"></a>
+      <a href="mailto:spaiklazaros@gmail.com" aria-label="Email"><img src="images/cover/seagull_stencil.png" alt="Email"></a>
       <a href="https://www.instagram.com/laz__street.snaps/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/cover/cross_stencil.png" alt="Instagram"></a>
       <a href="about.html" aria-label="About"><img src="images/cover/portrait_head.png" alt="About"></a>
     </div>
@@ -24,18 +24,6 @@
 
   <footer>© 2026 Lazaros Spaias. All rights reserved.</footer>
   <script src="js/protect.js"></script>
-  <script>
-    const emailIcon = document.getElementById('email-icon-hero');
-    if (emailIcon) {
-      emailIcon.addEventListener('click', (e) => {
-        e.preventDefault();
-        navigator.clipboard.writeText('spaiklazaros@gmail.com').then(() => {
-          emailIcon.setAttribute('title', 'Copied!');
-          setTimeout(() => emailIcon.removeAttribute('title'), 1500);
-        }).catch(() => { window.location.href = 'mailto:spaiklazaros@gmail.com'; });
-      });
-    }
-  </script>
 
 </body>
 </html>
