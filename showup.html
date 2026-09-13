@@ -5,65 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Show Up — Lazaros Spaias</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .showup-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px 36px;
+      text-align: center;
+    }
+    .showup-header a img {
+      height: 120px;
+      width: auto;
+      display: block;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+    .showup-header a:hover img { opacity: 1; }
+    .showup-quote {
+      margin-top: 22px;
+      max-width: 520px;
+      font-family: 'Special Elite', Georgia, serif;
+      font-size: clamp(0.75rem, 2vw, 1rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      line-height: 1.8;
+      color: #e8e8e8;
+      font-style: italic;
+    }
+    .showup-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+    .showup-grid .gallery-item {
+      aspect-ratio: 3/2;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .showup-grid .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s;
+    }
+    .showup-grid .gallery-item:hover img { opacity: 0.75; }
+    @media (max-width: 900px) { .showup-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .showup-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
 </head>
 <body>
 
-  <nav class="solid">
-    <a href="index.html" class="nav-logo">Lazaros Spaias</a>
-    <ul class="nav-links">
-      <li><a href="projects.html" class="active">Photos</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="showup-header">
+    <a href="index.html"><img src="images/cover/mohawk_stencil.png" alt="Show Up"></a>
+  </div>
 
-  <div class="page">
-    <div class="page-inner">
-      <p class="page-title">Show Up — Hardcore Punk</p>
-
-      <div class="gallery-grid gallery-grid--5">
-        <div class="gallery-item"><img src="images/hc-punk-diy/1.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/2.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/3.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/4.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/5.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/6.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/7.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/8.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/9.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/10.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/11.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/12.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/13.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/14.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/15.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/16.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/17.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/18.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/19.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/20.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/21.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/22.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/23.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/24.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/25.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/26.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/27.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/28.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/29.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/30.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/31.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/32.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/33.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/34.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/35.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/36.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/37.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/38.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/39.jpg" alt=""></div>
-        <div class="gallery-item"><img src="images/hc-punk-diy/40.jpg" alt=""></div>
-      </div>
-    </div>
+  <div class="showup-grid">
+    <div class="gallery-item"><img src="images/hc-punk-diy/1.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/2.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/3.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/4.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/5.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/6.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/7.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/8.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/9.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/10.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/11.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/12.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/13.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/14.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/15.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/16.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/17.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/18.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/19.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/20.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/21.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/22.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/23.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/24.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/25.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/26.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/27.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/28.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/29.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/30.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/31.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/32.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/33.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/34.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/35.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/36.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/37.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/38.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/39.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/hc-punk-diy/40.jpg" alt=""></div>
   </div>
 
   <!-- Lightbox -->
@@ -76,7 +113,6 @@
     <span class="lightbox-counter"></span>
   </div>
 
-  <footer>© 2026 Lazaros Spaias. All rights reserved.</footer>
   <script src="js/gallery.js"></script>
   <script src="js/protect.js"></script>
 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Are Not Alone — Lazaros Spaias</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .showup-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px 36px;
+      text-align: center;
+    }
+    .showup-header a img {
+      height: 120px;
+      width: auto;
+      display: block;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+    .showup-header a:hover img { opacity: 1; }
+    .showup-quote {
+      margin-top: 22px;
+      max-width: 520px;
+      font-family: 'Special Elite', Georgia, serif;
+      font-size: clamp(0.75rem, 2vw, 1rem);
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      line-height: 1.8;
+      color: #e8e8e8;
+      font-style: italic;
+    }
+    .showup-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+    .showup-grid .gallery-item {
+      aspect-ratio: 3/2;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .showup-grid .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s;
+    }
+    .showup-grid .gallery-item:hover img { opacity: 0.75; }
+    @media (max-width: 900px) { .showup-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .showup-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <div class="showup-header">
+    <a href="index.html"><img src="images/cover/jump_stencil.png" alt="Prague"></a>
+  </div>
+
+  <div class="showup-grid">
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_1.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_2.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_3.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_4.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_5.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_6.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_7.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_8.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_9.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_10.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_11.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_12.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_13.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_14.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_15.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_16.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_17.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_18.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_19.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_20.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_21.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_22.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_23.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_24.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_25.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_26.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_27.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_28.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_29.jpg" alt=""></div>
+    <div class="gallery-item"><img src="images/prague/ls_portfolio_30.jpg" alt=""></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="lightbox-title"></span>
+    <span class="lightbox-close">Close</span>
+    <span class="lightbox-nav lightbox-prev">&#8592;</span>
+    <img class="lightbox-img" src="" alt="">
+    <span class="lightbox-nav lightbox-next">&#8594;</span>
+    <span class="lightbox-counter"></span>
+  </div>
+
+  <script src="js/gallery.js"></script>
+  <script src="js/protect.js"></script>
+
+</body>
+</html>

@@ -5,48 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Lazaros Spaias</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .showup-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px 36px;
+      text-align: center;
+    }
+    .showup-header a img {
+      height: 120px;
+      width: auto;
+      display: block;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+    .showup-header a:hover img { opacity: 1; }
+    .about-content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+      text-align: center;
+    }
+    .about-content .about-text h2 { margin-bottom: 24px; }
+    .about-content .about-text ul { list-style: none; text-align: center; margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
+    .about-content .about-text ul li { font-size: 0.8rem; line-height: 1.6; color: var(--text); text-align: center; }
+    @media (max-width: 600px) { .about-content { padding: 0 20px 60px; } }
+  </style>
 </head>
 <body>
 
-  <nav class="solid">
-    <a href="index.html" class="nav-logo">Lazaros Spaias</a>
-    <ul class="nav-links">
-      <li><a href="projects.html">Photos</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="showup-header">
+    <a href="index.html"><img src="images/cover/portrait_head.png" alt="About"></a>
+  </div>
 
-  <div class="page">
-    <div class="page-inner">
-      <p class="page-title">About</p>
-
-      <div class="about-grid">
-
-        <div class="about-text">
-          <h2>Lazaros Spaias</h2>
-          <p>Lazaros Spaias is a photographer from Thessaloniki, Greece, currently living in the Netherlands. His work focuses on street/documentary photography, drawn to subcultures, communities, and the margins of everyday life. Street life in Amsterdam, Utrecht and Athens runs through much of his work, with an eye for the different, the non-mainstream, and the often overlooked.</p>
-          <p>Shaped by street culture, he came to photography in 2025 after a rock climbing injury grounded him. He picked up a camera and never put it down using photography as a way to document community, preserve memory, and capture the honest tension of people who resist easy categorisation.</p>
-          <ul>
-            <li>Zine Deca // Athens exhibited in Utrecht (2025)</li>
-            <li>Finalist, Athens Street Photography Festival (2025)</li>
-            <li>Interview on photography and subcultures published in Desperate Measure fanzine, Vol. 3 (2025)</li>
-            <li>Photographs from his ongoing hardcore punk documentary project published in scene fanzines across Europe</li>
-            <li>Winner of the People's Prize, IREST Photo Competition, Sorbonne Art Gallery (2026)</li>
-            <li>Finalist, Dublin Street Photography Festival (2026)</li>
-          </ul>
-        </div>
-
-        <div class="about-image">
-          <img src="images/cover/portrait.jpg" alt="Lazaros Spaias">
-          <p class="photo-credit">Photo by Dave Cremin.</p>
-        </div>
-
-      </div>
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About</h2>
+      <p>Lazaros Spaias is a photographer from Thessaloniki, Greece, currently living in the Netherlands. His work focuses on street/documentary photography, drawn to subcultures, communities, and the margins of everyday life. Street life in Amsterdam, Utrecht and Athens runs through much of his work, with an eye for the different, the non-mainstream, and the often overlooked.</p>
+      <p>Shaped by street culture, he came to photography in 2025 after a rock climbing injury grounded him. He picked up a camera and never put it down using photography as a way to document community, preserve memory, and capture the honest tension of people who resist easy categorisation.</p>
+      <h2 style="margin-top:40px;">Highlights</h2>
+      <ul>
+        <li>Zine Deca // Athens exhibited in Utrecht (2025)</li>
+        <li>Finalist, Athens Street Photography Festival (2025)</li>
+        <li>Interview on photography and subcultures published in Desperate Measure fanzine, Vol. 3 (2025)</li>
+        <li>Photographs from his ongoing hardcore punk documentary project published in scene fanzines across Europe</li>
+        <li>Winner of the People's Prize, IREST Photo Competition, Sorbonne Art Gallery (2026)</li>
+        <li>Finalist, Dublin Street Photography Festival (2026)</li>
+        <li>Loouvre Collective Exhibition, Utrecht (2026)</li>
+      </ul>
     </div>
   </div>
 
-  <footer>© 2026 Lazaros Spaias. All rights reserved.</footer>
   <script src="js/protect.js"></script>
 </body>
 </html>
