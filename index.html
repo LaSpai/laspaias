@@ -16,14 +16,31 @@
     <div class="hero-icons">
       <a href="youarenotalone.html" aria-label="You Are Not Alone"><img src="images/cover/jump_stencil.png" alt="You Are Not Alone"></a>
       <a href="showup.html" aria-label="Show Up"><img src="images/cover/mohawk_stencil.png" alt="Show Up"></a>
-      <a href="mailto:spaiklazaros@gmail.com" aria-label="Email"><img src="images/cover/seagull_stencil.png" alt="Email"></a>
+      <a href="mailto:spaiklazaros@gmail.com" aria-label="Email" id="email-icon"><img src="images/cover/seagull_stencil.png" alt="Email"></a>
       <a href="https://www.instagram.com/laz__street.snaps/" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/cover/cross_stencil.png" alt="Instagram"></a>
       <a href="about.html" aria-label="About"><img src="images/cover/portrait_head.png" alt="About"></a>
     </div>
   </div>
 
+  <div id="email-toast" style="display:none;position:fixed;bottom:40px;left:50%;transform:translateX(-50%);background:#fff;color:#0a0a0a;font-family:'Special Elite',Georgia,serif;font-size:0.75rem;letter-spacing:0.12em;padding:10px 22px;z-index:9999;">spaiklazaros@gmail.com — copied</div>
+
   <footer>© 2026 Lazaros Spaias. All rights reserved.</footer>
   <script src="js/protect.js"></script>
+  <script>
+    const emailLink = document.getElementById('email-icon');
+    const toast = document.getElementById('email-toast');
+    if (emailLink) {
+      emailLink.addEventListener('click', (e) => {
+        if (navigator.clipboard) {
+          e.preventDefault();
+          navigator.clipboard.writeText('spaiklazaros@gmail.com').then(() => {
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 2000);
+          }).catch(() => { window.location.href = 'mailto:spaiklazaros@gmail.com'; });
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
